@@ -1,4 +1,19 @@
-## Insecure Direct Object References
+# Auditoría de Seguridad - WebGoat
+
+## 1. Introducción
+
+Con el propósito de identificar y mitigar las vulnerabilidades de seguridad en la aplicación WebGoat, se realizó una auditoría de seguridad. WebGoat es una aplicación web vulnerable diseñada para enseñar a los desarrolladores cómo identificar y explotar vulnerabilidades comunes en aplicaciones web.
+
+## 2. Vulnerabilidades
+
+Se han encontrado un total de 3 vulnerabilidades en la aplicación WebGoat:
+
+- Críticas: 1
+- Altas: 2
+- Medias: 0
+- Bajas: 0
+
+## (A01:2021) Insecure Direct Object References
 
 ### Descripción de la vulnerabilidad
 
