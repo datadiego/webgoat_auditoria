@@ -21,7 +21,15 @@ Se identificó que en la respuesta a solicitudes GET en `/WebGoat/IDOR/profile` 
 *Probabilidad:* Las posibilidades de explotación son críticas, se puede ejecutar la vulnerabilidad desde cualquier navegador analizando las respuestas HTTP en bruto.
 
 TODO: Añadir evidencias
-TODO: Añadir acciones correctivas y recomendaciones
+
+##### Acciones correctivas
+
+- No exponer datos sensibles en las respuestas HTTP.
+- No exponer información sensible en la URL.
+- Implementar un control de acceso adecuado para proteger los datos sensibles.
+
+https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html
 
 #### 3.2 Acceso directo a objetos
 
@@ -39,6 +47,16 @@ Por ejemplo, la url `WebGoat/IDOR/profile/2342388` devuelve el perfil de otro us
 
 TODO: Añadir evidencias
 TODO: Añadir acciones correctivas y recomendaciones
+
+##### Acciones correctivas
+
+- Implementar un control de acceso adecuado para proteger los datos sensibles.
+- No exponer información sensible en la URL.
+- Implementar un control de acceso adecuado para proteger los datos sensibles.
+- No exponer datos sensibles en las respuestas HTTP.
+
+https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html
 
 #### 3.3 Modificación no autorizada de perfiles
 
@@ -74,5 +92,19 @@ Content-Length: 104
   "color": "red"
 }
 ```
+
+##### Análisis de riesgo
+
+*Severidad:* Alta
+*Impacto*: El atacante puede romper el principio de integridad modificando datos de otros usuarios sin autorización, comprometiendo la seguridad de la aplicación.
+*Probabilidad:* Las posibilidades de explotación son críticas, usando cualquier proxy o herramienta de desarrollo web.
+
 TODO: Añadir evidencias
-TODO: Añadir acciones correctivas y recomendaciones
+
+##### Acciones correctivas
+
+- Implementar un control de acceso adecuado para proteger los datos sensibles.
+- No exponer información sensible en la URL.
+
+https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html
