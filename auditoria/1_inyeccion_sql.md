@@ -2,8 +2,7 @@
 
 - Categoria de la vulnerabilidad: A03:2021 – Injection
 - CWE: [CWE-89](https://cwe.mitre.org/data/definitions/89.html)
-- CVSS: 9.8
-- [Resolución de Ejercicios en WebGoat](../A3-SQL-injection.md)
+- #CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H (Crítico)
 
 ### Descripción
 

@@ -2,7 +2,7 @@
 
 - Categoria de la vulnerabilidad: A02:2021 – Weak Passwords
 - CWE: [CWE-521](https://cwe.mitre.org/data/definitions/521.html)
-- [Resolución de Ejercicios en WebGoat](../A7-secure-password.md)
+- #CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H (Crítico)
 
 ### Descripción
 

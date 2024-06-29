@@ -2,8 +2,7 @@
 
 - Categoría de la vulnerabilidad: A07:2021 – Cross Site Scripting (XSS)
 - CWE: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
-TODO: Añadir CVSS
-- [Resolución de Ejercicios en WebGoat](../A3-XSS-injection.md)
+- #CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N (Alto)
 
 ### Descripción
 

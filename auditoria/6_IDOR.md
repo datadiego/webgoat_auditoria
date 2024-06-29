@@ -1,6 +1,8 @@
 ## IDOR (Insecure Direct Object Reference)
 
-La auditoría de seguridad de la aplicación web detectó una vulnerabilidad de Insecure Direct Object Reference (IDOR) en la funcionalidad de gestión de usuarios. Un atacante podría aprovechar esta vulnerabilidad para acceder a recursos protegidos de otros usuarios sin autorización.
+- Categoría de la vulnerabilidad: A01:2021 – Broken Access Control
+- CWE: [CWE-639](https://cwe.mitre.org/data/definitions/639.html)
+- #CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H (Crítico)
 
 ### Descripción
 

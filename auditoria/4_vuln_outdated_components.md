@@ -1,5 +1,9 @@
 ## Componentes no actualizados
 
+- Categoria: A06:2021 – Outdated Components
+- CVE: [CVE-2019-11358](https://nvd.nist.gov/vuln/detail/CVE-2019-11358)
+- #CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N (Media)
+
 ### Descripción
 
 Durante la auditoría se detectó que la aplicación web utiliza componentes con versiones desactualizadas. Un atacante podría aprovechar vulnerabilidades conocidas en las versiones antiguas de los componentes para comprometer la seguridad de la aplicación.
