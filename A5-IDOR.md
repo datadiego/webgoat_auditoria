@@ -29,3 +29,23 @@ La información que devuelve el servidor es la siguiente:
 
 Podemos observar que hay campos que no estan presentes en el front, estos son `role` y `userId`.
 
+## Lesson 4
+
+### Desarrollo
+
+Se nos pide que encontremos el patrón para acceder a la información de otros usuarios.
+
+### Solución
+
+Si analizamos la respuesta HTTP que se obtiene al consultar el perfil previo, podemos ver que la url es `/WebGoat/IDOR/profile/` seguido del id del usuario.
+
+## Lesson 5
+
+### Desarrollo
+
+Se nos pide acceder a la información de otro usuario aprovechando el patrón encontrado en la lección anterior.
+
+### Solución
+
+Podemos acceder a la información de otros usuarios cambiando el userId en la url. Por ejemplo: `/WebGoat/IDOR/profile/2` nos devuelve el siguiente resultado:
+
