@@ -13,4 +13,3 @@ Para interceptar la petición, podemos utilizar herramientas como WireShark o Bu
 }
 ```
 
-TODO: Añadir foto de wireshark y burp suite
