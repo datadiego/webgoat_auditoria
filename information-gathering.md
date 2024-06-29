@@ -80,3 +80,10 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 113.13 seconds
 ```
+
+Detectamos dos servicios en los puertos 8080 y 9090. El servicio en el puerto 8080 parece ser un servidor web, mientras que el servicio en el puerto 9090 no se puede identificar. Vamos a realizar un escaneo de directorios en el servidor web para encontrar posibles vulnerabilidades.
+
+En el frontend de la aplicación web encontramos las siguientes librerias:
+
+![Librerias](../imgs/libs.png)
+

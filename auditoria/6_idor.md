@@ -20,7 +20,7 @@ Podemos capturar la solicitud GET mediante un proxy web como Burp Suite o leerla
 
 ### Post-explotación
 
-Un atacante podría acceder a recursos protegidos de otros usuarios, como información personal, datos sensibles, o realizar acciones en nombre de otros usuarios modificando la solicitud GET.
+Un atacante puede acceder a recursos protegidos de otros usuarios, como información personal, datos sensibles, o realizar acciones en nombre de otros usuarios modificando la solicitud GET.
 
 ![Recursos protegidos](../imgs/idor1.png)
 
