@@ -21,9 +21,9 @@ Un atacante podría aprovechar la vulnerabilidad en la versión de jquery para i
 ```html
 <script>alert("hola mundo")</script>
 ```
-El código JavaScript se ejecutará en el navegador de los usuarios que visiten la página web.
-
 ![Inyección de js](../imgs/outdated0.png)
+
+El código JavaScript se ejecutará en el navegador de los usuarios que visiten la página web.
 
 ### Recomendación
 

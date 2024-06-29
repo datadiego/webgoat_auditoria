@@ -24,12 +24,9 @@ Podemos capturar la solicitud con Burp Suite y modificar el XML para inyectar c�
 </comment>
 ```
 
-Petici처n original:
+Petici처n original y petici처n modificada:
 
 ![Petici처n original](../imgs/xxe0.png)
-
-Petici처n modificada:
-
 ![Petici처n modificada](../imgs/xxe1.png)
 
 ### Post-explotaci처n
