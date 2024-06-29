@@ -81,7 +81,24 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 113.13 seconds
 ```
 
-Detectamos dos servicios en los puertos 8080 y 9090. El servicio en el puerto 8080 parece ser un servidor web, mientras que el servicio en el puerto 9090 no se puede identificar. Vamos a realizar un escaneo de directorios en el servidor web para encontrar posibles vulnerabilidades.
+Nikto nos devuelve el siguiente analisis:
+```
+- Nikto v2.1.5
+---------------------------------------------------------------------------
++ Target IP:          172.17.0.2
++ Target Hostname:    172.17.0.2
++ Target Port:        8080
++ Start Time:         2024-06-29 09:21:21 (GMT2)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ The anti-clickjacking X-Frame-Options header is not present.
++ 6544 items checked: 0 error(s) and 1 item(s) reported on remote host
++ End Time:           2024-06-29 09:21:38 (GMT2) (17 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+Detectamos dos servicios en los puertos 8080 y 9090. El servicio en el puerto 8080 parece ser un servidor web, mientras que el servicio en el puerto 9090 no se puede identificar. Nikto tampoco ha podido identificar el servidor web en el puerto 8080.
 
 En el frontend de la aplicación web encontramos las siguientes librerias:
 

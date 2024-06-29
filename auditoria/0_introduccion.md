@@ -1,3 +1,8 @@
+## Indice
+
+- [Introducción](0_introduccion.md)
+- [Metodología](1_metodologia.md)
+
 ## Introducción
 
 Este informe de auditoría ha sido realizado durante el bootcamp de ciberseguridad 2024 en Keepcoding. El objetivo de la auditoría es identificar y analizar las vulnerabilidades de seguridad presentes en la aplicación web de OWASP WebGoat.
