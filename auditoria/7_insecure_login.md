@@ -2,7 +2,6 @@
 
 - Categoria de la vulnerabilidad: A07:2021-Identification and Authentication Failures 
 - CWE: [CWE-287](https://cwe.mitre.org/data/definitions/287.html)
-- [Resolución de Ejercicios en WebGoat](../A7-Insecure-login.md)
 
 ## Descripción
 
