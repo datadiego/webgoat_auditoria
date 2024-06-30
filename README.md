@@ -49,9 +49,9 @@ La auditoría de seguridad se ha centrado en la identificación de vulnerabilida
 
 De las vulnerabilidades analizadas, 4 son críticas, 2 son de alta severidad y 1 es de severidad media. Se identificaron violaciones de principios de seguridad como la autenticación y autorización, la confidencialidad, la integridad y la disponibilidad de la información. Se recomienda aplicar las mitigaciones propuestas en cada una de las vulnerabilidades para mejorar la seguridad de la aplicación web.
 
-![Chart 1](../imgs/chart_pie.png){ width=60% }
+![Chart 1](../imgs/chart_pie.png)
 
-![Chart 2](../imgs/chart_bar.png){ width=60% }
+![Chart 2](../imgs/chart_bar.png)
 
 ## Information Gathering
 
@@ -398,25 +398,25 @@ Un atacante podría aprovechar la vulnerabilidad de IDOR para acceder a recursos
 
 Podemos capturar la solicitud GET mediante un proxy web como Burp Suite o leerla directamente desde el navegador.
 
-![Burp Suite](../imgs/idor0.png){ width=60% }
+![Burp Suite](../imgs/idor0.png)
 
-![Navegador](../imgs/idor2.png){ width=60% }
+![Navegador](../imgs/idor2.png)
 
 ### Post-explotación
 
 Un atacante puede acceder a recursos protegidos de otros usuarios, como información personal, datos sensibles, o realizar acciones en nombre de otros usuarios modificando la solicitud GET.
 
-![Recursos protegidos](../imgs/idor1.png){ width=60% }
+![Recursos protegidos](../imgs/idor1.png)
 
 Podemos hacer fuzzing en la solicitud GET para identificar recursos protegidos de otros usuarios.
 
-![Fuzzing](../imgs/idor3.png){ width=60% }
+![Fuzzing](../imgs/idor3.png)
 
 \newpage
 
 Y finalmente modificar la solicitud GET por un POST para modificar recursos protegidos de otros usuarios.
 
-![Fuzzing + Modificar recursos](../imgs/idor4.png){ width=60% }
+![Fuzzing + Modificar recursos](../imgs/idor4.png)
 
 ### Recomendaciones
 
