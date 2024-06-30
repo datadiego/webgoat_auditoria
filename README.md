@@ -49,9 +49,9 @@ La auditoría de seguridad se ha centrado en la identificación de vulnerabilida
 
 De las vulnerabilidades analizadas, 4 son críticas, 2 son de alta severidad y 1 es de severidad media. Se identificaron violaciones de principios de seguridad como la autenticación y autorización, la confidencialidad, la integridad y la disponibilidad de la información. Se recomienda aplicar las mitigaciones propuestas en cada una de las vulnerabilidades para mejorar la seguridad de la aplicación web.
 
-![Chart 1](../imgs/chart_pie.png)
+[Chart 1](../imgs/chart_pie.png)
 
-![Chart 2](../imgs/chart_bar.png)
+[Chart 2](../imgs/chart_bar.png)
 
 ## Information Gathering
 
@@ -90,8 +90,6 @@ Nikto nos devuelve el siguiente analisis:
 
 Detectamos dos servicios en los puertos 8080 y 9090. El servicio en el puerto 8080 parece ser un servidor web, mientras que el servicio en el puerto 9090 no se puede identificar. Nikto tampoco ha podido identificar el servidor web en el puerto 8080.
 
-\newpage
-
 En el frontend de la aplicación web encontramos las siguientes librerias:
 
 ```js
@@ -109,7 +107,9 @@ search: 'search'
 ```
 
 
-![Librerias](../imgs/libs.png)# Vulnerabilidades
+![Librerias](../imgs/libs.png)
+
+# Vulnerabilidades
 
 ## Inyección de SQL
 
