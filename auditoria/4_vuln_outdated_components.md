@@ -8,19 +8,18 @@
 
 Durante la auditoría se detectó que la aplicación web utiliza componentes con versiones desactualizadas. Un atacante podría aprovechar vulnerabilidades conocidas en las versiones antiguas de los componentes para comprometer la seguridad de la aplicación.
 
-La versión de jquery utilizada en la aplicación web es vulnerable a [CVE-2019-11358](https://nvd.nist.gov/vuln/detail/CVE-2019-11358), que permite a un atacante ejecutar código JavaScript malicioso en el navegador de los usuarios.
-
 ### Explotación de la vulnerabilidad
 
 Acceder a las librerías usadas en el frontend es accesible desde el propio navegador, por lo que un atacante podría identificar la versión de jquery utilizada en la aplicación web y buscar vulnerabilidades conocidas en esa versión.
 
-![Librerias](../imgs/libs.png)
+![Librerias](../imgs/libs.png){ width=60% }
 
 Un atacante podría aprovechar la vulnerabilidad en la versión de jquery para inyectar código JavaScript malicioso en la aplicación web. Por ejemplo, si el atacante inyecta el siguiente código en un campo de texto:
 
 ```html
 <script>alert("hola mundo")</script>
 ```
+
 ![Inyección de js](../imgs/outdated0.png){ width=60% }
 
 El código JavaScript se ejecutará en el navegador de los usuarios que visiten la página web.
