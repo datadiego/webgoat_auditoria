@@ -41,17 +41,19 @@ La auditoría de seguridad se ha centrado en la identificación de vulnerabilida
   - Weak Password Policy
   - Insecure Login
   - Insecure Direct Object Reference (IDOR)
-- Referencias
 - Anexos
+  - Resolucion de ejercicios
+  - Informe de auditoría
+- Referencias
 
 
 ## Conclusiones
 
 De las vulnerabilidades analizadas, 4 son críticas, 2 son de alta severidad y 1 es de severidad media. Se identificaron violaciones de principios de seguridad como la autenticación y autorización, la confidencialidad, la integridad y la disponibilidad de la información. Se recomienda aplicar las mitigaciones propuestas en cada una de las vulnerabilidades para mejorar la seguridad de la aplicación web.
 
-[Chart 1](../imgs/chart_pie.png)
+![Chart 1](../imgs/chart_pie.png){ width=60% }
 
-[Chart 2](../imgs/chart_bar.png)
+![Chart 2](../imgs/chart_bar.png){ width=60% }
 
 ## Information Gathering
 
@@ -90,6 +92,8 @@ Nikto nos devuelve el siguiente analisis:
 
 Detectamos dos servicios en los puertos 8080 y 9090. El servicio en el puerto 8080 parece ser un servidor web, mientras que el servicio en el puerto 9090 no se puede identificar. Nikto tampoco ha podido identificar el servidor web en el puerto 8080.
 
+\newpage
+
 En el frontend de la aplicación web encontramos las siguientes librerias:
 
 ```js
@@ -107,9 +111,7 @@ search: 'search'
 ```
 
 
-![Librerias](../imgs/libs.png)
-
-# Vulnerabilidades
+![Librerias](../imgs/libs.png)# Vulnerabilidades
 
 ## Inyección de SQL
 
@@ -316,7 +318,7 @@ Un atacante podría aprovechar la vulnerabilidad en la versión de jquery para i
 ```html
 <script>alert("hola mundo")</script>
 ```
-![Inyección de js](../imgs/outdated0.png)
+![Inyección de js](../imgs/outdated0.png){ width=60% }
 
 El código JavaScript se ejecutará en el navegador de los usuarios que visiten la página web.
 
@@ -398,25 +400,25 @@ Un atacante podría aprovechar la vulnerabilidad de IDOR para acceder a recursos
 
 Podemos capturar la solicitud GET mediante un proxy web como Burp Suite o leerla directamente desde el navegador.
 
-![Burp Suite](../imgs/idor0.png)
+![Burp Suite](../imgs/idor0.png){ width=60% }
 
-![Navegador](../imgs/idor2.png)
+![Navegador](../imgs/idor2.png){ width=60% }
 
 ### Post-explotación
 
 Un atacante puede acceder a recursos protegidos de otros usuarios, como información personal, datos sensibles, o realizar acciones en nombre de otros usuarios modificando la solicitud GET.
 
-![Recursos protegidos](../imgs/idor1.png)
+![Recursos protegidos](../imgs/idor1.png){ width=60% }
 
 Podemos hacer fuzzing en la solicitud GET para identificar recursos protegidos de otros usuarios.
 
-![Fuzzing](../imgs/idor3.png)
+![Fuzzing](../imgs/idor3.png){ width=60% }
 
 \newpage
 
 Y finalmente modificar la solicitud GET por un POST para modificar recursos protegidos de otros usuarios.
 
-![Fuzzing + Modificar recursos](../imgs/idor4.png)
+![Fuzzing + Modificar recursos](../imgs/idor4.png){ width=60% }
 
 ### Recomendaciones
 

@@ -13,7 +13,9 @@
   - Weak Password Policy
   - Insecure Login
   - Insecure Direct Object Reference (IDOR)
-- Referencias
 - Anexos
+  - Resolucion de ejercicios
+  - Informe de auditoría
+- Referencias
 
 
