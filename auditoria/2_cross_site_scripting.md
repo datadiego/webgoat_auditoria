@@ -34,6 +34,8 @@ Una vez que el atacante ha inyectado código JavaScript en la aplicación web, p
 <script>alert(JSON.stringify(sessionStorage))</script>
 ```
 
+Exposiciones de información:
+
 ![Exposición de cookies](../imgs/xss1.png)
 ![Exposición de objeto document](../imgs/xss2.png)
 

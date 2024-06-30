@@ -16,23 +16,25 @@ Un atacante podría aprovechar la vulnerabilidad de IDOR para acceder a recursos
 
 Podemos capturar la solicitud GET mediante un proxy web como Burp Suite o leerla directamente desde el navegador.
 
-![Burp Suite](../imgs/idor0.png)
+![Burp Suite](../imgs/idor0.png){ width=60% }
 
-![Navegador](../imgs/idor2.png)
+![Navegador](../imgs/idor2.png){ width=60% }
 
 ### Post-explotación
 
 Un atacante puede acceder a recursos protegidos de otros usuarios, como información personal, datos sensibles, o realizar acciones en nombre de otros usuarios modificando la solicitud GET.
 
-![Recursos protegidos](../imgs/idor1.png)
+![Recursos protegidos](../imgs/idor1.png){ width=60% }
 
 Podemos hacer fuzzing en la solicitud GET para identificar recursos protegidos de otros usuarios.
 
-![Fuzzing](../imgs/idor3.png)
+![Fuzzing](../imgs/idor3.png){ width=60% }
+
+\newpage
 
 Y finalmente modificar la solicitud GET por un POST para modificar recursos protegidos de otros usuarios.
 
-![Fuzzing + Modificar recursos](../imgs/idor4.png)
+![Fuzzing + Modificar recursos](../imgs/idor4.png){ width=60% }
 
 ### Recomendaciones
 
